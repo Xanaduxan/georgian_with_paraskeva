@@ -1,0 +1,18 @@
+ul{
+    display: flex;
+    padding: 0px;
+
+    font-family: Arial, sans-serif;
+    text-transform:uppercase;
+}
+
+li{
+    border:solid 1px black;
+    display:inline-block;
+}
+
+a{
+    display:inline-flex;
+    padding: 10px;
+    color: rgb(79, 25, 25);
+}
