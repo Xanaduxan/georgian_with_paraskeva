@@ -1,13 +1,17 @@
-const React = require('react');
-const Layout = require('./Layout');
+import React from 'react'
 
-function Reviews() {
-  return (
-    <Layout>
+import './Reviews.css';
+
+
+const Reviews = () => {
+
+  return (<>
+ 
       <div className="reviews-list">
-
+        <h2>Отзывы</h2>
         <blockquote className="review-item">
           <p className="description">
+          
             Мотив к обучению у меня простой: папа грузин и я при этом не знающая ни слова на грузинском.
             Раньше
             этот
@@ -29,7 +33,7 @@ function Reviews() {
             поддерживает.
           </p>
           <cite className="review-author">Александра</cite>
-          <a className="btn add-link" href="#" title="Читать далее">Читать далее</a>
+          <input type="checkbox" className='expend-button'/>
         </blockquote>
 
         <blockquote className="review-item">
@@ -48,8 +52,8 @@ function Reviews() {
             сама,
             значит и меня научит, значит это возможно, у меня получится 😄😄😄
           </p>
-          <cite className="review-author">Елизавета </cite>
-          <a className="btn add-link" href="#" title="Читать далее">Читать далее</a>
+          <cite className="review-author">Елизавета</cite>
+          <input type="checkbox" className='expend-button'/>
         </blockquote>
 
         <blockquote className="review-item">
@@ -61,12 +65,12 @@ function Reviews() {
             полученные знания на упражнениях. Процесс подачи материала Параскевой мне нравится, планирую
             и в дальнейшем продолжать с таким же успехом)
           </p>
-          <cite className="review-author">Алина </cite>
-          <a className="btn add-link" href="#" title="Читать далее">Читать далее</a>
+          <cite className="review-author">Алина</cite>
+          <input type="checkbox" className='expend-button'/>
         </blockquote>
 
         <blockquote className="review-item">
-          <p>
+          <p className="description">
             Хочу выразить огромную благодарность моему учителю грузинского языка Параскеве Лебедевой!
             Параскева - это не просто учитель, это профессионал своего дела, который отдаёт все силы на
             то, чтобы ученик углубился в изучаемый им язык, понял и разобрался в нем, а не просто заучил
@@ -78,8 +82,8 @@ function Reviews() {
             иностранные языки, и я понимаю, о чем говорю. Спасибо вам, любимый учитель, за знания,
             которые вы вкладываете в меня и за любовь к грузинскому языку!
           </p>
-          <cite className="review-author">Ия </cite>
-          <a className="btn add-link" href="#" title="Читать далее">Читать далее</a>
+          <cite className="review-author">Ия</cite>
+          <input type="checkbox" className='expend-button'/>
         </blockquote>
 
         <blockquote className="review-item">
@@ -96,8 +100,8 @@ function Reviews() {
             С Параскевой приятно общаться, мы быстро нашли общий язык и занятия проходили в приятной
             атмосфере.
           </p>
-          <cite className="review-author">Евгения </cite>
-          <a className="btn add-link" href="#" title="Читать далее">Читать далее</a>
+          <cite className="review-author">Евгения</cite>
+          <input type="checkbox" className='expend-button'/>
         </blockquote>
 
         <blockquote className="review-item">
@@ -109,13 +113,14 @@ function Reviews() {
             в общении человек, ответственный педагог.
           </p>
           <cite className="review-author">Ольга</cite>
-          <a className="btn add-link" href="#" title="Читать далее">Читать далее</a>
+          <input type="checkbox" className='expend-button'/>
         </blockquote>
       </div>
 
-    </Layout>
+   </>
+  
 
   );
 }
 
-module.exports = Reviews;
+export default Reviews;

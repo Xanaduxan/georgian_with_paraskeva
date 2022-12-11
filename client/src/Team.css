@@ -1,0 +1,37 @@
+.edu {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding-top:20px;
+  font-size: 20px;
+}
+
+
+
+div.promo-container {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+  justify-content: center;
+}
+
+.promo-photo {
+  max-width: 300px;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.team-container{
+  max-width: 1000px;
+}
+
+.edu-point{
+padding: 20px;
+}
+
+.p-container{
+  margin-top: 10px;
+  padding-top: 5px;
+  max-width:900px;
+  font-size: 25px;
+}

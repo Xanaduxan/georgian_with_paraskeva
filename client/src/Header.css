@@ -1,0 +1,67 @@
+
+.App-header {
+
+  background-image: url('../public/images/green_sanctuary.jpg');
+  height: 250px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content:center;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+
+.main-title{
+  display: flex;
+justify-content: center;
+  align-items: center;
+  margin: 20px; font-size: 50px;
+  flex-wrap:wrap;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  font-size: 20px;
+  text-transform: uppercase;
+
+}
+.nav:hover {
+  text-decoration: underline;
+  color:rgb(233, 45, 24);
+
+}
+
+@media screen and (min-width < 664px){
+  .App-header {
+
+    background-image: url('../public/images/green_sanctuary.jpg');
+    height: 250px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content:flex-start;
+    flex-direction: column;
+    align-items: baseline;
+  }
+  
+  .main-title{
+    display: flex;
+   
+    align-items: baseline;
+    margin: 20px;
+  }
+  
+  .nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+  
+  }
+}

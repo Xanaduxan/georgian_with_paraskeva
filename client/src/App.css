@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+a {
+  color: rgb(196, 93, 24);
+  padding: 15px;
+  text-decoration: none;
+
+  
+}
+a:hover{
+  color: rgb(91, 41, 8);
+}
+
+body{
+  background-color: rgb(242, 248, 248);
+}
+
+h2 {
+  padding: 20px;
+}
+
+footer {
+  background-color: rgb(135, 135, 222);
+  color: white;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
+

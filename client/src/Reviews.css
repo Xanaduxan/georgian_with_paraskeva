@@ -1,0 +1,78 @@
+
+h2, p {
+  margin: 0;
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+.reviews-list{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap:50px;
+  align-items: center;
+  font-size: 24px;
+  margin: 10px;
+
+}
+
+.review-item{
+  border: 1px solid black;
+  max-width: 700px;
+    border-radius: 0.25em;
+    padding: 1rem;
+    background-color: white;
+}
+
+.reviews-list{
+--max-line: 4;
+  
+}
+
+.review-author{
+padding:10px;
+font-weight:bold;
+}
+
+
+.description:has(~ .expend-button:not(:checked)) {
+  --line-height: 1.2;
+  overflow: hidden;
+  line-height: var(--line-height);
+  height: calc(var(--max-line) *1em *var(--line-height));
+  position: relative;
+}
+
+
+
+.description:has(~ .expend-button:not(:checked))::before {
+  content:"";
+  width: 100%;
+  height: calc(var(--line-height) * 2em);
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(to bottom, transparent, white);
+}
+
+.expend-button{
+  appearance: none;
+  border-radius: 0.25rem;
+  padding:0.5rem;
+  cursor:pointer;
+  margin:1rem;
+}
+.expend-button:hover{
+background-color: rgb(228, 225, 221);
+}
+
+.expend-button::before{
+  content: 'Читать далее';
+  font-size: 20px;
+}
+
+.expend-button:checked::before{
+  content: 'Скрыть';
+  font-size: 20px;
+}
